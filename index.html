@@ -34,7 +34,7 @@
 							<li><a href="index.html">Home</a></li>
 							<li><a href="live.html">Karaoke Nights</a></li>
 							<li><a href="ortliebs.html">The Red Room</a></li>
-							<li><a href="elements.html">Elements</a></li>
+							<li><a href="events.html">Private Events</a></li>
 						</ul>
 						<ul class="actions stacked">
 							<li><a href="#" class="button primary fit">Get Started</a></li>
@@ -49,9 +49,7 @@
 								<h1>Karaoke is fun!</h1>
 							</header>
 							<div class="content">
-								<p>Karaoke brings people together and makes for an unforgettable night.<br>
-								Find out how we can use our state-of-the-art equipment and hosting<br>
-								to create karaoke magic at your next event.</p>
+								<p>Be the star of your next event!</p>
 								<ul class="actions">
 									<li><a href="#one" class="button next scrolly">Book Now</a></li>
 								</ul>
@@ -69,8 +67,8 @@
 										<img src="images/pic01.jpg" alt="" />
 									</span>
 									<header class="major">
-										<h3><a href="live.html" class="link">Karaoke Nights</a></h3>
-										<p>Catch the live show</p>
+										<h3><a href="live.html" class="link">Calendar</a></h3>
+										<p>Find a karaoke night near you</p>
 									</header>
 								</article>
 								<article>
@@ -78,8 +76,8 @@
 										<img src="images/pic02.jpg" alt="" />
 									</span>
 									<header class="major">
-										<h3><a href="landing.html" class="link">Private Events</a></h3>
-										<p>Book your next party</p>
+										<h3><a href="events.html" class="link">Booking</a></h3>
+										<p>Have karaoke at your next event</p>
 									</header>
 								</article>
 								<article>
@@ -87,10 +85,11 @@
 										<img src="images/pic03.jpg" alt="" />
 									</span>
 									<header class="major">
-										<h3><a href="ortliebs.html" class="link">Pharari @ The Red Room</a></h3>
-										<p>Catered karaoke + full bar for your next company event</p>
+										<h3><a href="ortliebs.html" class="link">Book our venue</a></h3>
+										<p>Catered karaoke + full bar for your next company party</p>
 									</header>
-								</article>
+								</article>		
+								<!--								
 								<article>
 									<span class="image">
 										<img src="images/pic04.jpg" alt="" />
@@ -100,6 +99,9 @@
 										<p>What our customers are saying</p>
 									</header>
 								</article>
+								
+								
+								
 								<article>
 									<span class="image">
 										<img src="images/pic05.jpg" alt="" />
@@ -109,13 +111,16 @@
 										<p>Photos and videos from past events</p>
 									</header>
 								</article>
+								
+								-->
+								
 								<article>
 									<span class="image">
 										<img src="images/pic06.jpg" alt="" />
 									</span>
 									<header class="major">
-										<h3><a href="landing.html" class="link">About</a></h3>
-										<p>Our story</p>
+										<h3><a href="landing.html" class="link">More info</a></h3>
+										<p>Media archive</p>
 									</header>
 								</article>
 							</section>
@@ -126,7 +131,7 @@
 									<header class="major">
 										<h2>Book now!</h2>
 									</header>
-									<p>Karaoke and/or DJ services. Parties, events, weddings, get-togethers, ragers, bangers, all of it, you name it. Get in touch!</p>
+									<p>Fill out the form below to get started on your custom quote.</p>
 									<ul class="actions">
 										<li><a href="landing.html" class="button next">Contact us</a></li>
 									</ul>
@@ -142,16 +147,49 @@
 								<form method="post" action="https://formspree.io/patpharari@gmail.com">
 									<div class="fields">
 										<div class="field half">
-											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
+											<label for="name">Full Name*</label>
+											<input type="text" name="name" id="name" required>
 										</div>
 										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
+											<label for="email">Email*</label>
+											<input type="text" name="email" id="email" required>
 										</div>
 											<div class="field half">
 											<label for="phone">Phone Number</label>
 											<input type="text" name="phone" id="phone" />
+										</div>
+											<div class="field half">
+											<label for="date">Date of Event*</label>
+											<input type="text" name="date" id="date" required>
+										</div>
+										<div class="field half">
+											<label for="partysize">Number of Guests*</label>
+											  <select name="partysize" id="partysize" required>
+																<option value="#">&nbsp;</option>
+   															<option value="10-24">10-24</option>
+   															<option value="25-49">25-49</option>
+   															<option value="50-100">50-100</option>
+   															<option value="100+">100+</option>
+  											</select>
+										</div>
+										<div class="field half">
+											<label for="event_type">Event Type*</label>
+											  <select name="event_type" id="event_type" required>
+																<option value="#">&nbsp;</option>
+   															<option value="Holiday Party">Holiday Party</option>
+   															<option value="Birthday">Birthday</option>
+																<option value="Corporate">Company Event</option>
+   															<option value="Fundraiser">Fundraiser</option>
+   															<option value="Other">Other</option>
+  											</select>
+										</div>
+											<div class="field">
+											<label for="company">Company/Organization</label>
+											<input type="text" name="company" id="company" />
+										</div>
+										<div class="field">
+											<label for="budget">Event Budget*</label>
+											<input type="text" name="budget" id="budget" placeholder="Enter per person budget or total budget" required>
 										</div>
 										<div class="field">
 											<label for="message">Message</label>
