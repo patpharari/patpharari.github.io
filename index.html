@@ -46,12 +46,12 @@
 					<section id="banner" class="major">
 						<div class="inner">
 							<header class="major">
-								<h1>Karaoke is fun!</h1>
+								<h1>Karaoke is fun.</h1>
 							</header>
 							<div class="content">
-								<p>Be the star of your next event!</p>
+								<p>Have karaoke at your next event!</p>
 								<ul class="actions">
-									<li><a href="#one" class="button next scrolly">Book Now</a></li>
+									<li><a href="#two" class="button next scrolly">Book Now</a></li>
 								</ul>
 							</div>
 						</div>
@@ -68,7 +68,7 @@
 									</span>
 									<header class="major">
 										<h3><a href="live.html" class="link">Calendar</a></h3>
-										<p>Find a karaoke night near you</p>
+										<p>Come sing with us!</p>
 									</header>
 								</article>
 								<article>
@@ -85,8 +85,8 @@
 										<img src="images/pic03.jpg" alt="" />
 									</span>
 									<header class="major">
-										<h3><a href="ortliebs.html" class="link">Book our venue</a></h3>
-										<p>Catered karaoke + full bar for your next company party</p>
+										<h3><a href="ortliebs.html" class="link">Our venue</a></h3>
+										<p>The Red Room @ Ortlieb's: Full bar + catering</p>
 									</header>
 								</article>		
 								<!--								
@@ -119,8 +119,8 @@
 										<img src="images/pic06.jpg" alt="" />
 									</span>
 									<header class="major">
-										<h3><a href="landing.html" class="link">More info</a></h3>
-										<p>Media archive</p>
+										<h3><a href="landing.html" class="link">Media</a></h3>
+										<p>Photo/video</p>
 									</header>
 								</article>
 							</section>
@@ -160,7 +160,7 @@
 										</div>
 											<div class="field half">
 											<label for="date">Date of Event*</label>
-											<input type="text" name="date" id="date" required>
+											<input type="date" name="date" id="date" min="1899-01-01" required>
 										</div>
 										<div class="field half">
 											<label for="partysize">Number of Guests*</label>
@@ -178,6 +178,7 @@
 																<option value="#">&nbsp;</option>
    															<option value="Holiday Party">Holiday Party</option>
    															<option value="Birthday">Birthday</option>
+																<option value="Wedding">Wedding</option>
 																<option value="Corporate">Company Event</option>
    															<option value="Fundraiser">Fundraiser</option>
    															<option value="Other">Other</option>
@@ -188,8 +189,8 @@
 											<input type="text" name="company" id="company" />
 										</div>
 										<div class="field">
-											<label for="budget">Event Budget*</label>
-											<input type="text" name="budget" id="budget" placeholder="Enter per person budget or total budget" required>
+											<label for="budget">Event Budget</label>
+											<input type="text" name="budget" id="budget" placeholder="Enter per person budget or total budget">
 										</div>
 										<div class="field">
 											<label for="message">Message</label>
@@ -253,6 +254,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
+			<script src="assets/js/datemax.js"></script>
 	</body>
 </html>

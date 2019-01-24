@@ -1909,6 +1909,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b0000', end
 	input[type="tel"],
 	input[type="search"],
 	input[type="url"],
+	input[type="date"],
 	select,
 	textarea {
 		-moz-appearance: none;
@@ -1978,6 +1979,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b0000', end
 	input[type="tel"],
 	input[type="search"],
 	input[type="url"],
+	input[type="date"],
 	select {
 		height: 2.75em;
 	}
