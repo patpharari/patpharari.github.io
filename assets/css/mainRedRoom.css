@@ -3585,7 +3585,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', e
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		padding: 6em 0 2em 0 ;
+		padding: 2.5em 0 2em 0 ;
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;
@@ -3598,6 +3598,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', e
 		min-height: 32em;
 		position: relative;
 		top: -3.25em;
+		z-index: 99;
 	}
 
 		#banner2:after {
