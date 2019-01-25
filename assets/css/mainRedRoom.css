@@ -1910,6 +1910,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b0000', end
 	input[type="search"],
 	input[type="url"],
 	input[type="date"],
+	input[type="time"],
 	select,
 	textarea {
 		-moz-appearance: none;

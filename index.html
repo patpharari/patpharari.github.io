@@ -32,13 +32,14 @@
 					<nav id="menu">
 						<ul class="links">
 							<li><a href="index.html">Home</a></li>
-							<li><a href="live.html">Karaoke Nights</a></li>
-							<li><a href="ortliebs.html">The Red Room</a></li>
-							<li><a href="events.html">Private Events</a></li>
+							<li><a href="services.html">Our Services</a></li>
+							<li><a href="booking.html">Booking</a></li>
+							<li><a href="ortliebs.html">Our Venue</a></li>
+							<li><a href="events.html">Photos/Media</a></li>
 						</ul>
 						<ul class="actions stacked">
-							<li><a href="#" class="button primary fit">Get Started</a></li>
-							<li><a href="#" class="button fit">Log In</a></li>
+							<li><a href="#contact" class="button primary fit">Contact Us</a></li>
+							<!--<li><a href="#" class="button fit">Log In</a></li>-->
 						</ul>
 					</nav>
 
@@ -133,7 +134,7 @@
 									</header>
 									<p>Fill out the form below to receive your custom quote.</p>
 									<ul class="actions">
-										<li><a href="landing.html" class="button next">Contact us</a></li>
+										<li><a href="#contact" class="button next">Get started</a></li>
 									</ul>
 								</div>
 							</section>
@@ -146,21 +147,29 @@
 							<section>
 								<form method="post" action="https://formspree.io/patpharari@gmail.com">
 									<div class="fields">
+											<div class="field half">
+											<label for="email">Email*</label>
+											<input type="text" name="email" id="email" required>
+										</div>
 										<div class="field half">
 											<label for="name">Full Name*</label>
 											<input type="text" name="name" id="name" required>
 										</div>
-										<div class="field half">
-											<label for="email">Email*</label>
-											<input type="text" name="email" id="email" required>
-										</div>
 											<div class="field half">
-											<label for="phone">Phone Number</label>
-											<input type="text" name="phone" id="phone" />
+											<label for="phone">Phone Number*</label>
+											<input type="text" name="phone" id="phone" required>
 										</div>
 											<div class="field half">
 											<label for="date">Date of Event*</label>
 											<input type="date" name="date" id="date" min="1899-01-01" required>
+										</div>
+											<div class="field half">
+											<label for="startTime">Event Start Time</label>
+											<input type="time" name="startTime" id="startTime">
+										</div>
+											<div class="field half">
+											<label for="endTime">Event End Time</label>
+											<input type="time" name="endTime" id="endTime">
 										</div>
 										<div class="field half">
 											<label for="partysize">Number of Guests*</label>
@@ -188,10 +197,10 @@
 											<label for="company">Company/Organization</label>
 											<input type="text" name="company" id="company" />
 										</div>
-										<div class="field">
+										<!--<div class="field">
 											<label for="budget">Event Budget</label>
 											<input type="text" name="budget" id="budget" placeholder="Enter per person budget or total budget">
-										</div>
+										</div>-->
 										<div class="field">
 											<label for="message">Message</label>
 											<textarea name="message" id="message" rows="6"></textarea>

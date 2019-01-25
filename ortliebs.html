@@ -32,13 +32,14 @@
 					<nav id="menu">
 						<ul class="links">
 							<li><a href="index.html">Home</a></li>
-							<li><a href="landing.html">Landing</a></li>
-							<li><a href="generic.html">Generic</a></li>
-							<li><a href="elements.html">Elements</a></li>
+							<li><a href="services.html">Our Services</a></li>
+							<li><a href="booking.html">Booking</a></li>
+							<li><a href="ortliebs.html">Our Venue</a></li>
+							<li><a href="photos.html">Photos/Media</a></li>
 						</ul>
 						<ul class="actions stacked">
-							<li><a href="#" class="button primary fit">Get Started</a></li>
-							<li><a href="#" class="button fit">Log In</a></li>
+							<li><a href="#contact" class="button primary fit">Contact Us</a></li>
+							<!--<li><a href="#" class="button fit">Log In</a></li>-->
 						</ul>
 					</nav>
 
@@ -160,27 +161,35 @@ We've got the food, drinks and entertainment covered.
 							</section>
 
 					</div>
-<!-- Contact -->
+				<!-- Contact -->
 					<section id="contact">
 						<div class="inner">
 							<section>
 								<form method="post" action="https://formspree.io/patpharari@gmail.com">
 									<div class="fields">
+											<div class="field half">
+											<label for="email">Email*</label>
+											<input type="text" name="email" id="email" required>
+										</div>
 										<div class="field half">
 											<label for="name">Full Name*</label>
 											<input type="text" name="name" id="name" required>
 										</div>
-										<div class="field half">
-											<label for="email">Email*</label>
-											<input type="text" name="email" id="email" required>
-										</div>
 											<div class="field half">
-											<label for="phone">Phone Number</label>
-											<input type="text" name="phone" id="phone" />
+											<label for="phone">Phone Number*</label>
+											<input type="text" name="phone" id="phone" required>
 										</div>
 											<div class="field half">
 											<label for="date">Date of Event*</label>
-											<input type="text" name="date" id="date" required>
+											<input type="date" name="date" id="date" min="1899-01-01" required>
+										</div>
+											<div class="field half">
+											<label for="startTime">Event Start Time</label>
+											<input type="time" name="startTime" id="startTime">
+										</div>
+											<div class="field half">
+											<label for="endTime">Event End Time</label>
+											<input type="time" name="endTime" id="endTime">
 										</div>
 										<div class="field half">
 											<label for="partysize">Number of Guests*</label>
@@ -198,6 +207,7 @@ We've got the food, drinks and entertainment covered.
 																<option value="#">&nbsp;</option>
    															<option value="Holiday Party">Holiday Party</option>
    															<option value="Birthday">Birthday</option>
+																<option value="Wedding">Wedding</option>
 																<option value="Corporate">Company Event</option>
    															<option value="Fundraiser">Fundraiser</option>
    															<option value="Other">Other</option>
@@ -207,10 +217,10 @@ We've got the food, drinks and entertainment covered.
 											<label for="company">Company/Organization</label>
 											<input type="text" name="company" id="company" />
 										</div>
-										<div class="field">
-											<label for="budget">Event Budget*</label>
-											<input type="text" name="budget" id="budget" placeholder="Enter per person budget or total budget" required>
-										</div>
+										<!--<div class="field">
+											<label for="budget">Event Budget</label>
+											<input type="text" name="budget" id="budget" placeholder="Enter per person budget or total budget">
+										</div>-->
 										<div class="field">
 											<label for="message">Message</label>
 											<textarea name="message" id="message" rows="6"></textarea>
@@ -249,6 +259,7 @@ We've got the food, drinks and entertainment covered.
 							</section>
 						</div>
 					</section>
+
 <!-- Footer -->
 					<footer id="footer">
 						<div class="inner">

@@ -1910,6 +1910,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b0000', end
 	input[type="search"],
 	input[type="url"],
 	input[type="date"],
+	input[type="startTime"],
+	input[type="endTime"],
+	input[type="time"],
 	select,
 	textarea {
 		-moz-appearance: none;
@@ -1933,6 +1936,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b0000', end
 		input[type="tel"]:invalid,
 		input[type="search"]:invalid,
 		input[type="url"]:invalid,
+		input[type="startTime"]:invalid,
+		input[type="endTime"]:invalid,
 		select:invalid,
 		textarea:invalid {
 			box-shadow: none;
@@ -1944,6 +1949,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b0000', end
 		input[type="tel"]:focus,
 		input[type="search"]:focus,
 		input[type="url"]:focus,
+		input[type="startTime"]:focus,
+		input[type="endTime"]:focus,
 		select:focus,
 		textarea:focus {
 			border-color: #9bf1ff;
@@ -1980,6 +1987,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b0000', end
 	input[type="search"],
 	input[type="url"],
 	input[type="date"],
+	input[type="startTime"],
+	input[type="endTime"],
 	select {
 		height: 2.75em;
 	}
