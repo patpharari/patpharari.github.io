@@ -3610,7 +3610,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', e
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			pointer-events: none;
-			background-color: ;
+			background-color:-moz-linear-gradient(top, rgba(0,0,0,0.25) 0%, rgba(0,0,0,1) 55%, rgba(0,0,0,1) 99%);
+background: -moz-linear-gradient(top, rgba(203,96,179,0.33) 0%, rgba(146,24,226,0.32) 50%, rgba(222,71,172,0.31) 100%);
+background: -webkit-linear-gradient(top, rgba(203,96,179,0.33) 0%,rgba(146,24,226,0.32) 50%,rgba(222,71,172,0.31) 100%);
+background: linear-gradient(to bottom, rgba(203,96,179,0.33) 0%,rgba(146,24,226,0.32) 50%,rgba(222,71,172,0.31) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54cb60b3', endColorstr='#4fde47ac',GradientType=0 );
 			content: '';
 			display: block;
 			height: 100%;
