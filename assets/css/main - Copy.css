@@ -1910,7 +1910,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b0000', end
 	input[type="search"],
 	input[type="url"],
 	input[type="date"],
-	input[type="duration"],
+	input[type="startTime"],
+	input[type="endTime"],
+	input[type="time"],
 	select,
 	textarea {
 		-moz-appearance: none;
@@ -1934,7 +1936,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b0000', end
 		input[type="tel"]:invalid,
 		input[type="search"]:invalid,
 		input[type="url"]:invalid,
-		input[type="duration"]:invalid,
+		input[type="startTime"]:invalid,
+		input[type="endTime"]:invalid,
 		select:invalid,
 		textarea:invalid {
 			box-shadow: none;
@@ -1946,7 +1949,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b0000', end
 		input[type="tel"]:focus,
 		input[type="search"]:focus,
 		input[type="url"]:focus,
-		input[type="duration"]:focus,
+		input[type="startTime"]:focus,
+		input[type="endTime"]:focus,
 		select:focus,
 		textarea:focus {
 			border-color: #9bf1ff;
@@ -1983,7 +1987,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b0000', end
 	input[type="search"],
 	input[type="url"],
 	input[type="date"],
-	input[type="duration"],
+	input[type="startTime"],
+	input[type="endTime"],
 	select {
 		height: 2.75em;
 	}
@@ -3577,237 +3582,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#40000000', e
 				}
 
 		}
-/* Banner2 for Youtube Embed Video */
-
-	#banner2 {
-		-moz-align-items: center;
-		-webkit-align-items: center;
-		-ms-align-items: center;
-		align-items: center;
-		background-image: url("../../images/banner.jpg");
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		padding: 2.5em 0 2em 0 ;
-		background-attachment: fixed;
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		border-bottom: 0 !important;
-		cursor: default;
-		height: 60vh;
-		margin-bottom: -3.25em;
-		max-height: 42em;
-		min-height: 32em;
-		position: relative;
-		top: -3.25em;
-		z-index: 99;
-	}
-
-		#banner2:after {
-			-moz-transition: opacity 2.5s ease;
-			-webkit-transition: opacity 2.5s ease;
-			-ms-transition: opacity 2.5s ease;
-			transition: opacity 2.5s ease;
-			-moz-transition-delay: 0.75s;
-			-webkit-transition-delay: 0.75s;
-			-ms-transition-delay: 0.75s;
-			transition-delay: 0.75s;
-			pointer-events: none;
-			background-color:-moz-linear-gradient(top, rgba(0,0,0,0.25) 0%, rgba(0,0,0,1) 55%, rgba(0,0,0,1) 99%);
-background: -moz-linear-gradient(top, rgba(203,96,179,0.33) 0%, rgba(146,24,226,0.32) 50%, rgba(222,71,172,0.31) 100%);
-background: -webkit-linear-gradient(top, rgba(203,96,179,0.33) 0%,rgba(146,24,226,0.32) 50%,rgba(222,71,172,0.31) 100%);
-background: linear-gradient(to bottom, rgba(203,96,179,0.33) 0%,rgba(146,24,226,0.32) 50%,rgba(222,71,172,0.31) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#54cb60b3', endColorstr='#4fde47ac',GradientType=0 );
-			content: '';
-			display: block;
-			height: 100%;
-			left: 0;
-			opacity: 0;
-			position: absolute;
-			top: 0;
-			width: 100%;
-			z-index: 1;
-		}
-
-		#banner2 h1 {
-			font-size: 3.25em;
-		}
-
-		#banner2 > .inner {
-			-moz-transition: opacity 1.5s ease, -moz-transform 0.5s ease-out, -moz-filter 0.5s ease, -webkit-filter 0.5s ease;
-			-webkit-transition: opacity 1.5s ease, -webkit-transform 0.5s ease-out, -webkit-filter 0.5s ease, -webkit-filter 0.5s ease;
-			-ms-transition: opacity 1.5s ease, -ms-transform 0.5s ease-out, -ms-filter 0.5s ease, -webkit-filter 0.5s ease;
-			transition: opacity 1.5s ease, transform 0.5s ease-out, filter 0.5s ease, -webkit-filter 0.5s ease;
-			padding: 0 !important;
-			position: relative;
-			z-index: 2;
-		}
-
-			#banner2 > .inner .image {
-				display: none;
-			}
-
-			#banner2 > .inner header {
-				width: auto;
-			}
-
-				#banner2 > .inner header > :first-child {
-					width: auto;
-				}
-
-					#banner2 > .inner header > :first-child:after {
-						max-width: 100%;
-					}
-
-			#banner2 > .inner .content {
-				display: -moz-flex;
-				display: -webkit-flex;
-				display: -ms-flex;
-				display: flex;
-				-moz-align-items: center;
-				-webkit-align-items: center;
-				-ms-align-items: center;
-				align-items: center;
-				margin: 0 0 0em 0;
-			}
-
-				#banner2 > .inner .content > * {
-					margin-right: 0em;
-					margin-bottom: 0;
-				}
-
-				#banner2 > .inner .content > :last-child {
-					margin-right: 0;
-				}
-
-				#banner2 > .inner .content p {
-					font-size: 0.7em;
-					font-weight: 600;
-					letter-spacing: 0.25em;
-					text-transform: uppercase;
-				}
-
-		#banner2.major {
-			height: 75vh;
-			min-height: 30em;
-			max-height: 50em;
-		}
-
-			#banner2.major.alt {
-				opacity: 0;
-			}
-
-		#banner2.style1:after {
-			background-color: #6fc3df;
-		}
-
-		#banner2.style2:after {
-			background-color: #FF0000;
-		}
-
-		#banner2.style3:after {
-			background-color: #ec8d81;
-		}
-
-		#banner2.style4:after {
-			background-color: #e7b788;
-		}
-
-		#banner2.style5:after {
-			background-color: #8ea9e8;
-		}
-
-		#banner2.style6:after {
-			background-color: #87c5a4;
-		}
-
-		body.is-preload #banner2:after {
-			opacity: 1.0;
-		}
-
-		body.is-preload #banner2 > .inner {
-			-moz-filter: blur(0.125em);
-			-webkit-filter: blur(0.125em);
-			-ms-filter: blur(0.125em);
-			filter: blur(0.125em);
-			-moz-transform: translateX(-0.5em);
-			-webkit-transform: translateX(-0.5em);
-			-ms-transform: translateX(-0.5em);
-			transform: translateX(-0.5em);
-			opacity: 0;
-		}
-
-		@media screen and (max-width: 1280px) {
-
-			#banner2 {
-				background-attachment: scroll;
-			}
-
-		}
-
-		@media screen and (max-width: 736px) {
-
-			#banner2 {
-				padding: 5em 0 1em 0 ;
-				height: auto;
-				margin-bottom: -2.75em;
-				max-height: none;
-				min-height: 0;
-				top: -2.75em;
-			}
-
-				#banner2 h1 {
-					font-size: 2em;
-				}
-
-				#banner2 > .inner .content {
-					display: block;
-				}
-
-					#banner2 > .inner .content > * {
-						margin-right: 0;
-						margin-bottom: 2em;
-					}
-
-				#banner2.major {
-					height: auto;
-					min-height: 0;
-					max-height: none;
-				}
-
-		}
-
-		@media screen and (max-width: 480px) {
-
-			#banner2 {
-				padding: 6em 0 2em 0 ;
-			}
-
-				#banner2 > .inner .content p br {
-					display: none;
-				}
-
-				#banner2.major {
-					padding: 8em 0 4em 0 ;
-				}
-
-		}
-		
-.videoWrapper {
-	position: relative;
-	padding-bottom: 56.25%; /* 16:9 */
-	padding-top: 25px;
-	height: 0;
-}
-.videoWrapper iframe {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-}
 
 /* Main */
 
@@ -4177,3 +3951,128 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007d82', end
 			opacity: 1;
 			visibility: visible;
 		}
+		
+/* Image Carousel */
+
+.tech-slideshow {
+  height: 80px;
+  max-width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.tech-slideshow > div {
+  height: 80px;
+  width: 2241px;
+  background: url(../../images/logoscroll.png);
+	background-color:transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: translate3d(0, 0, 0);
+}
+.tech-slideshow .mover-1 {
+  animation: moveSlideshow 30s linear infinite;
+}
+
+@keyframes moveSlideshow {
+  100% { 
+    transform: translateX(-66.6666%);  
+  }
+}
+
+#container {
+ width: 1000px;
+ overflow: hidden;
+ margin: 5px auto;
+ background: white;
+}
+/*photobanner*/
+ 
+.photobanner {
+ height: 80px;
+ width: 2400px;
+ margin-bottom: 0px;
+}
+ 
+.photobanner img {
+ -webkit-transition: all 0.5s ease;
+ -moz-transition: all 0.5s ease;
+ -o-transition: all 0.5s ease;
+ -ms-transition: all 0.5s ease;
+ transition: all 0.5s ease;
+}
+ 
+.photobanner img:hover {
+ -webkit-transform: scale(1.1);
+ -moz-transform: scale(1.1);
+ -o-transform: scale(1.1);
+ -ms-transform: scale(1.1);
+ transform: scale(1.1);
+ cursor: pointer;
+ 
+ -webkit-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+ -moz-box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+ box-shadow: 0px 3px 5px rgba(0,0,0,0.2);
+}
+/*keyframe animations*/
+.first {
+ -webkit-animation: bannermove 30s linear infinite;
+    -moz-animation: bannermove 30s linear infinite;
+     -ms-animation: bannermove 30s linear infinite;
+      -o-animation: bannermove 30s linear infinite;
+         animation: bannermove 30s linear infinite;
+}
+ 
+@keyframes "bannermove" {
+ 0% {
+    margin-left: 0px;
+ }
+ 100% {
+    margin-left: -2125px;
+ }
+ 
+}
+ 
+@-moz-keyframes bannermove {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-webkit-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-ms-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
+ 
+@-o-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -2125px;
+ }
+ 
+}
