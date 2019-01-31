@@ -78,7 +78,7 @@
 									<header class="major">
 										<h2>Full service.</h2>
 									</header>
-									<p>Avoid the hassle of chasing down a venue, vetting DJs and researching caterers.<br>
+									<p style="text-align:justify;">Avoid the hassle of chasing down a venue, vetting DJs and researching caterers.<br>
 We've got the food, drinks and entertainment covered.
 </p>
 								</div>
@@ -95,15 +95,15 @@ We've got the food, drinks and entertainment covered.
 											<header class="major">
 												<h3>Food, Fun, Friends</h3>
 											</header>
-											<p>The Red Room is located in Philadelphia's trendy Northern Liberties neighborhood. Ortlieb's, once a legendary jazz club, now one of Philly's hottest music venues, offers a distinctive retro setting complete with a red-curtained karaoke stage and disco ball.
+											<p style="text-align:justify;">The Red Room is located in Philadelphia's trendy Northern Liberties neighborhood. Ortlieb's, once a legendary jazz club, now one of Philly's hottest music venues, offers a distinctive retro setting complete with a red-curtained karaoke stage and disco ball.
 </p>
 											<ul class="actions">
-												<li><a href="generic.html" class="button">Learn more</a></li>
+												<li><a href="#dos" class="button next scrolly">Learn more</a></li>
 											</ul>
 										</div>
 									</div>
 								</section>
-								<section>
+								<section id="dos">
 									<a href="generic.html" class="image">
 										<img src="images/pic09.jpg" alt="" data-position="top center" />
 									</a>
@@ -112,7 +112,7 @@ We've got the food, drinks and entertainment covered.
 											<header class="major">
 												<h3>The Complete Package</h3>
 											</header>
-											<p>
+											<p style="text-align:justify;">
 <ul>
 <li>Full bar service, including cocktails + local brews</li>
 <li>Mouthwatering tacos, burritos, vegan options + more</li>
@@ -124,12 +124,12 @@ We've got the food, drinks and entertainment covered.
 </ul>
 </p>
 											<ul class="actions">
-												<li><a href="generic.html" class="button">Learn more</a></li>
+												<li><a href="#tres" class="button next scrolly">Learn more</a></li>
 											</ul>
 										</div>
 									</div>
 								</section>
-								<section>
+								<section id="tres">
 									<a href="generic.html" class="image">
 										<img src="images/pic10.jpg" alt="" data-position="25% 25%" />
 									</a>
@@ -138,9 +138,9 @@ We've got the food, drinks and entertainment covered.
 											<header class="major">
 												<h3>The Perfect Space</h3>
 											</header>
-											<p>The Red Room has hosted wedding receptions, holiday parties, birthdays, bachelor/ette parties, networking events, and more! Let us customize an event package for you. </p>
+											<p style="text-align:justify;">The Red Room has hosted wedding receptions, holiday parties, birthdays, bachelor/ette parties, networking events, and more! Let us customize an event package for you. </p>
 											<ul class="actions">
-												<li><a href="generic.html" class="button">Learn more</a></li>
+												<li><a href="#three" class="button next scrolly">Learn more</a></li>
 											</ul>
 										</div>
 									</div>
@@ -153,9 +153,9 @@ We've got the food, drinks and entertainment covered.
 									<header class="major">
 										<h2>Ready to book?</h2>
 									</header>
-									<p>Bring your next event to The Red Room at Ortlieb's. Our DJ will set the vibe while your guests enjoy a full bar and mouthwatering menu. Whether you're planning a small happy hour mixer or a catered wedding reception, Pharari and Ortlieb's bring the party, all you have to do is show up.</p>
+									<p style="text-align:justify;">Bring your next event to The Red Room at Ortlieb's. Our DJ will set the vibe while your guests enjoy a full bar and mouthwatering menu. Whether you're planning a small happy hour mixer or a catered wedding reception, Pharari and Ortlieb's bring the party. All you have to do is show up!</p>
 									<ul class="actions">
-										<li><a href="#contact" class="button next">Get Started</a></li>
+										<li><a href="#contact" class="button next scrolly">Get Started</a></li>
 									</ul>
 								</div>
 							</section>
@@ -183,14 +183,16 @@ We've got the food, drinks and entertainment covered.
 											<label for="date">Date of Event*</label>
 											<input type="date" name="date" id="date" min="1899-01-01" required>
 										</div>
-										<!--	<div class="field half">
-											<label for="startTime">Event Duration</label>
-											<input type="time" name="startTime" id="startTime">
-										</div>
-											<div class="field half">
-											<label for="endTime">Event End Time</label>
-											<input type="time" name="endTime" id="endTime">
-										</div>-->
+										<div class="field half">
+											<label for="duration">Event Length*</label>
+											 <select name="duration" id="duration" placeholder="How many hours?" required>
+																<option value="#" disabled selected>How many hours?</option>
+																<option value="1">1</option>
+   															<option value="2">2</option>
+   															<option value="3">3</option>
+																<option value="4">4</option>
+																<option value="5+">5+</option>
+  											</select></div>
 										<div class="field half">
 											<label for="partysize">Number of Guests*</label>
 											  <select name="partysize" id="partysize" required>
