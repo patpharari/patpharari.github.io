@@ -9,7 +9,7 @@
 		<title>PHARARI Karaoke - Our Services</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/services.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -24,6 +24,10 @@
 						<img src="images/logo.png"
 						</a>
 						<nav>
+						<ul class="icons">
+								<li><a href="https://www.facebook.com/thepatpharari" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
+								<li><a href="https://www.instagram.com/patpharari/" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
+							</ul>
 							<a href="#menu">Menu</a>
 						</nav>
 					</header>
@@ -67,10 +71,9 @@
 							<section id="one">
 								<div class="inner">
 									<header class="major">
-										<h2>Having a party? Call me.</h2>
+										<h2>Choose Pharari.</h2>
 									</header>
-									<p>Why Pharari? Because I'm the best! 
-Hosting public, private and corporate events from DC to Philly to Brooklyn.
+									<p>Hosting public, private and corporate events from DC to Philly to Brooklyn.
 									</p>
 								</div>
 							</section>
@@ -187,18 +190,20 @@ Let us come to you, or use <a href="ortliebs.html">The Red Room</a> - our legend
 											<label for="phone">Phone Number*</label>
 											<input type="text" name="phone" id="phone" required>
 										</div>
-											<div class="field half">
+													<div class="field half">
 											<label for="date">Date of Event*</label>
 											<input type="date" name="date" id="date" min="1899-01-01" required>
 										</div>
-											<div class="field half">
-											<label for="startTime">Event Start Time</label>
-											<input type="time" name="startTime" id="startTime">
-										</div>
-											<div class="field half">
-											<label for="endTime">Event End Time</label>
-											<input type="time" name="endTime" id="endTime">
-										</div>
+										<div class="field half">
+											<label for="duration">Event Length*</label>
+											 <select name="duration" id="duration" placeholder="How many hours?" required>
+																<option value="#" disabled selected>How many hours?</option>
+																<option value="1">1</option>
+   															<option value="2">2</option>
+   															<option value="3">3</option>
+																<option value="4">4</option>
+																<option value="5+">5+</option>
+  											</select></div>
 										<div class="field half">
 											<label for="partysize">Number of Guests*</label>
 											  <select name="partysize" id="partysize" required>
@@ -220,6 +225,10 @@ Let us come to you, or use <a href="ortliebs.html">The Red Room</a> - our legend
    															<option value="Fundraiser">Fundraiser</option>
    															<option value="Other">Other</option>
   											</select>
+										</div>
+												<div class="field half">
+											<label for="text">Other</label>
+											<input type="text" name="other" id="other" placeholder="If other, tell us about your event">
 										</div>
 											<div class="field">
 											<label for="company">Company/Organization</label>
