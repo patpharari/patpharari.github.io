@@ -2978,6 +2978,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9b0000', end
 					margin: 0 auto;
 					max-width: 100%;
 					width: 65em;
+					overflow: auto!important; -webkit-overflow-scrolling: touch!important;"
 				}
 
 			.spotlights > section:nth-child(2n) {
